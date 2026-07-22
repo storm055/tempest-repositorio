@@ -1,0 +1,12 @@
+{
+  "name": "hello",
+  "version": "2.12",
+  "description": "Exemplo de pacote para o repositório mpt.",
+  "source": "https://ftp.gnu.org/gnu/hello/hello-2.12.tar.gz",
+  "build_commands": [
+    "./configure --prefix=/usr",
+    "make",
+    "make install"
+  ],
+  "dependencies": []
+}

@@ -1,0 +1,8 @@
+[project]
+name = "mpt"
+version = "0.1.0"
+description = "Minimal package manager for a source-based Linux distribution repository."
+requires-python = ">=3.11"
+
+[project.scripts]
+mpt = "mpt.main:main"
