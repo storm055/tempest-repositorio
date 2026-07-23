@@ -1,4 +1,4 @@
-# MPT - Package Manager for LFS (mpt)
+# MPT - Modular package tool for LFS (mpt)
 
 This repository contains the `mpt` project, a minimalist package manager for source-based Linux distributions.
 
