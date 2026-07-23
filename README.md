@@ -1,53 +1,53 @@
-# MPT - Gerenciador de Pacotes para LFS (mpt)
+# MPT - Package Manager for LFS (mpt)
 
-Este repositório contém o projeto `mpt`, um gerenciador de pacotes minimalista para distros Linux baseadas em código-fonte.
+This repository contains the `mpt` project, a minimalist package manager for source-based Linux distributions.
 
-## Estrutura
+## Structure
 
-- `mpt/`: código do gerenciador de pacotes
-- `packages/`: metadados e definições de pacotes
-- `rootfs/`: sistema de arquivos de destino onde os pacotes são instalados
-- `.mpt/`: dados internos do repositório (`index.json`, `installed.json`)
+- `mpt/`: package manager code
+- `packages/`: package metadata and definitions
+- `rootfs/`: target filesystem where packages are installed
+- `.mpt/`: internal repository data (`index.json`, `installed.json`)
 
-## Como usar
+## Usage
 
-Inicialize o repositório:
+Initialize the repository:
 
 ```bash
 python3 -m mpt.main init
 ```
 
-Adicione um manifest de pacote:
+Add a package manifest:
 
 ```bash
 python3 -m mpt.main add packages/hello.json
 ```
 
-Instale um pacote:
+Install a package:
 
 ```bash
 python3 -m mpt.main install hello
 ```
 
-Liste os pacotes disponíveis:
+List available packages:
 
 ```bash
 python3 -m mpt.main list
 ```
 
-Liste os pacotes instalados:
+List installed packages:
 
 ```bash
 python3 -m mpt.main list --installed
 ```
 
-Remova um pacote:
+Remove a package:
 
 ```bash
 python3 -m mpt.main remove hello
 ```
 
-Verifique os arquivos de um pacote instalado:
+Verify the files of an installed package:
 
 ```bash
 python3 -m mpt.main verify hello
